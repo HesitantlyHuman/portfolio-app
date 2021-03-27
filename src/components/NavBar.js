@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Text, Stack, Flex, Button } from '@chakra-ui/react';
-import { FaBars as MenuIcon} from 'react-icons/fa';
-import { RiCloseCircleLine as CloseIcon} from 'react-icons/ri';
+import { BiMenu as MenuIcon} from 'react-icons/bi';
+import { MdClose as CloseIcon} from 'react-icons/md';
 import { Link } from 'react-scroll';
 
 class Logo extends React.Component{
@@ -36,7 +36,7 @@ class NavToggle extends React.Component{
 
   render(){
     return(
-      <Box display = {{base : 'block', md : 'none'}} onClick = {this.toggle.bind(this)}>
+      <Box display = {{base : 'block', md : 'none'}} fontSize = '2xl' onClick = {this.toggle.bind(this)}>
         {this.state.isOpen ? <CloseIcon/> : <MenuIcon/>}
       </Box>
     )

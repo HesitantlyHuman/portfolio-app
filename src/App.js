@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   ChakraProvider,
+  Divider,
   Box,
   Text,
   Link,
@@ -14,24 +15,13 @@ import { day, night } from './styles/Themes.js';
 import { Fonts } from './styles/Fonts.js';
 
 import { ContentContainer, ContentCard, TitleCard, FooterCard } from './components/Containers.js';
-import { NavBar, NavElement } from './components/NavBar.js';
+import { NavBar, NavElement, NavSpacer } from './components/NavBar.js';
 import Landing from './components/Landing.js';
 import About from './components/About.js';
 import PortfolioList from './components/Portfolio.js';
 import Contact from './components/Contact.js';
 
-const receivedPortfolioItems = [
-  {'name' : 'Generating structured latent spaces with VAEs',
-  'description' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales venenatis eros, non eleifend nisl mollis et. Integer eros eros, pellentesque nec mi quis, euismod molestie urna.',
-  'github' : 'https://www.google.com',
-  'image' : '/images/high_dimensional.png'},
-  {'name' : 'Predicting location masks of Human Kidney Glomeruli: A Kaggle competition',
-  'description' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales venenatis eros, non eleifend nisl mollis et. Integer eros eros, pellentesque nec mi quis, euismod molestie urna.',
-  'image' : '/images/glomeruli.webp'},
-  {'name' : 'How to win at Gomoku (Five in a row), Reinforcement learning with style',
-  'description' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales venenatis eros, non eleifend nisl mollis et. Integer eros eros, pellentesque nec mi quis, euismod molestie urna.',
-  'image' : '/images/gomoku.jpg'}
-];
+import linkedProjects from './data/LinkedProjects.js';
 
 class App extends React.Component {
   constructor(props){
@@ -53,9 +43,25 @@ class App extends React.Component {
       <Fonts/>
       <NavBar>
         <NavElement text = 'Home' target = 'landing'/>
+        <Divider
+          width = '20%'
+          orientation = 'horizontal'
+        />
         <NavElement text = 'About Me' target = 'about'/>
+        <Divider
+          width = '20%'
+          direction = 'horizontal'
+        />
         <NavElement text = 'Portfolio' target = 'portfolio'/>
+        <Divider
+          width = '20%'
+          direction = 'horizontal'
+        />
         <NavElement text = 'Contact' target = 'contact'/>
+        <Divider
+          width = '20%'
+          direction = 'horizontal'
+        />
         <ColorModeSwitcher onClick = {this.toggleTheme.bind(this)}/>
       </NavBar>
       <ContentContainer
@@ -75,7 +81,7 @@ class App extends React.Component {
         <TitleCard text = 'Portfolio'>
         </TitleCard>
         <PortfolioList
-          data = {receivedPortfolioItems}
+          data = {linkedProjects}
           id = 'portfolio'
         />
         <FooterCard>

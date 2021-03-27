@@ -30,6 +30,14 @@ export const day = extendTheme({
     portfolio:{
       hair: '0.15em'
     }
+  },
+  sizes: {
+    portfolio:{
+      wide: '2.5em',
+      standard: '1.5em',
+      thin: '.75em',
+      hair: '0.15em'
+    }
   }
 });
 
@@ -61,6 +69,14 @@ export const night = extendTheme({
   },
   borderWidths: {
     portfolio:{
+      hair: '0.15em'
+    }
+  },
+  sizes: {
+    portfolio:{
+      wide: '2.5em',
+      standard: '1.5em',
+      thin: '.75em',
       hair: '0.15em'
     }
   }

@@ -53,7 +53,7 @@ class TitleCard extends React.Component {
           m = {'portfolio.standard'}
           bg = 'portfolio.forground'
         >
-          <Heading fontSize = '3xl' fontWeight = {600} color = 'footer.forground' lineHeight = '85%'>{this.props.text}</Heading>
+          <Heading fontSize = '3xl' fontWeight = {600} color = 'portfolio.text' lineHeight = '85%'>{this.props.text}</Heading>
         </Box>
       </Box>
     )
