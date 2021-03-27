@@ -14,7 +14,7 @@ class About extends React.Component {
           <Heading fontSize = '3xl' fontWeight = {600} color = 'portfolio.text' lineHeight = '85%'>About Me</Heading>
           <Box height = '1em'/>
           <Text color = 'portfolio.text' fontSize = 'sm' fontWeight = {300}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales venenatis eros, non eleifend nisl mollis et. Integer eros eros, pellentesque nec mi quis, euismod molestie urna. Suspendisse non maximus libero. Nam aliquam rutrum nisi, id finibus diam iaculis convallis. Sed pellentesque, tortor quis gravida luctus, magna odio luctus nisi, fringilla tincidunt quam libero vitae diam. Suspendisse vel felis vitae eros malesuada porttitor. Maecenas elementum elit et ligula volutpat, eu finibus nunc varius. Donec mattis ultricies magna, vel lobortis turpis tempus fermentum. Aenean porttitor mattis ante sed porttitor. Morbi maximus orci ac ligula tristique tempor. Proin gravida tellus eu diam consectetur, at hendrerit mauris sodales. 
+            I first learned to code in 6th grade (don’t worry, I won’t show you any of those projects). These days I focus on data science and machine learning, with an emphasis in model interpretability of deep networks. I am currently pursuing a bachelor’s in mathematics with an emphasis in computation at the University of Utah[citation needed], where I am engaged in machine learning research. I mainly work with pytorch, numpy and tensorflow, but have been known to learn new languages and packages as the mood strikes me.
           </Text>
         </Box>
       </Box>
