@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub as GithubLogo } from 'react-icons/fa';
-import { Box, Text, Stack, Flex, Image, Heading, Container, AspectRatio, Grid, Spacer, Center, Square } from '@chakra-ui/react';
+import { Box, Text, Stack, Flex, Image, Heading, Container, AspectRatio, Grid, Spacer, Center, Square, Icon } from '@chakra-ui/react';
 
 class PortfolioList extends React.Component{
   render() {
@@ -111,8 +111,9 @@ class PortfolioItem extends React.Component{
                     fontSize = '2xl'
                   >
                     <a href = {this.props.data.github}>
-                      <GithubLogo
-                        color = 'portfolio.text'
+                      <Icon
+                        as = {GithubLogo}
+                        fill = 'portfolio.text'
                       />
                     </a>
                   </Box>

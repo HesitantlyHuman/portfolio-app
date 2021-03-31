@@ -68,23 +68,18 @@ class App extends React.Component {
           width = '100%'
           top = {0}
       >
-        <ContentCard>
-          <Landing
-            id = 'landing'>
-          </Landing>
+        <ContentCard id = 'landing'>
+          <Landing/>
         </ContentCard>
-        <ContentCard>
-          <About
-            id = 'about'
-          />
+        <ContentCard id = 'about'>
+          <About/>
         </ContentCard>
-        <TitleCard text = 'Portfolio'>
+        <TitleCard text = 'Portfolio' id = 'portfolio'>
         </TitleCard>
         <PortfolioList
           data = {linkedProjects}
-          id = 'portfolio'
         />
-        <FooterCard>
+        <FooterCard id>
           <Contact/>
         </FooterCard>
       </ContentContainer>

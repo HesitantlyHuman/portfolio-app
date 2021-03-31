@@ -54,6 +54,7 @@ class NavElement extends React.Component{
       <Link
         to={this.target}
         smooth = {100}
+        offset = {-100}
         spy = {true}
       >
         <Button
